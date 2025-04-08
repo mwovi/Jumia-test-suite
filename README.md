@@ -1,4 +1,4 @@
-# Jumia-test-suite
+# QA -Test-suite
 
 ## Overview
 
@@ -6,16 +6,9 @@ This test suite is designed to demonstrate automated testing skills using Cypres
 
 ## Current Tests for "The Internet" Platform
 
-The following login scenarios are currently covered:
+The following scenarios are currently covered:
 
-1. **Successful Login**: Verifies that a user can log in with valid credentials.
-2. **Invalid Password**: Ensures the system rejects login attempts with an incorrect password.
-3. **Empty Credentials**: Checks that the system handles empty username and password fields appropriately.
-4. **Partial Credentials**:
-   - Username only: Ensures the system rejects login attempts with only the username filled.
-   - Password only: Ensures the system rejects login attempts with only the password filled.
-5. **Invalid Username**: Verifies that the system rejects login attempts with an invalid username.
-6. **Logout**: Confirms that a user can log out successfully after logging in.
+1. **Login**: Automatically tests for happy path, edge test cases and negative test cases
 
 ## How to Run the Tests
 

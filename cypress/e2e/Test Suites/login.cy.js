@@ -69,11 +69,15 @@ describe("The Internet Login Tests", () => {
     );
   });
 
-  it("Tests multiple invalid logins from data", () => {
+  it.only("Tests multiple invalid logins from data", () => {
     const badLogins = [
       { username: "tomsmith", password: "x" },
       { username: "baduser", password: "SuperSecretPassword!" },
       { username: " ", password: " " },
+      {username: "baduser", password: "badpassword"},
+      {username: " ", password: "SuperSecretPassword"},
+      {username: "tomsmith", password: " "}
+      
     ];
     badLogins.forEach((cred) => {
       cy.get("#username").clear().type(cred.username);
